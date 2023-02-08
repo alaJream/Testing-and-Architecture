@@ -3,24 +3,19 @@
 
 def dice(ingredients):
     print("diced all ingredients.")
+    
 def mix_all(diced_ingredients):
     print("mixed all.")
+    
 def add_salt():
     print('added salt.')
+    
 def pour(liquid):
-    print('poured', liquid + '.',)
-
+    print('poured', liquid + '.')
+    
 def make_shirazi_salad(ingredients):
-    if 'cucumber' not in ingredients:
-        print('lacks ingredients.')
-        return
-    if 'tomato' not in ingredients:
-        print('lacks ingredients.')
-        return
-    if 'onion' not in ingredients:
-        print('lacks ingredients.')
-        return
-    if 'lemon juice' not in ingredients:
+    required_ingredients = ['cucumber', 'tomato', 'onion', 'lemon juice']
+    if not all(ingredient in ingredients for ingredient in required_ingredients):
         print('lacks ingredients.')
         return
     dice(ingredients)
