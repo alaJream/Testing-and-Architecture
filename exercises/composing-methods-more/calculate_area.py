@@ -2,27 +2,29 @@
 # Rename Method
 # Reference: https://parade.com/1039985/marynliles/pick-up-lines/
 
-def cal_un_gr(graph):   # TODO: Rename this function to reflect what it's doing.
+def calculate_area_under_graph(graph):  
     """Calculate the area under the input graph."""
-
+    # bla bla bla.
     pass
 
 #####################
 
-def get_max_value(li):  # TODO: Rename this function to reflect what it's doing.
-    m = li[0]
-    for value in li:
-        if value > m:
-            m = value
-    return m
+def get_max_value(list_of_values):  
+    """Get the maximum value from a list of numeric values."""
+    max_value = list_of_values[0]
+    for value in list_of_values:
+        if value > max_value:
+            max_value = value
+    return max_value
 
 
-li = [5, -1, 43, 32, 87, -100]
-print(get_max_value(li))
+list_of_values = [5, -1, 43, 32, 87, -100]
+print(get_max_value(list_of_values))
 
 ############################
-def split_sentence_to_words(sentence):  # TODO: Rename this function to reflect what it's doing.
-    words = sentence[0:].split(' ')
+def extract_words_from_sentence(sentence):  
+    """Extract individual words from a sentence."""
+    words = sentence.split(' ')
     return words
 
-print(split_sentence_to_words('If you were a vegetable, you’d be a ‘cute-cumber.'))
+print(extract_words_from_sentence('If you were a vegetable, you’d be a ‘cute-cumber.')) 
