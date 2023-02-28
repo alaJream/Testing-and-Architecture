@@ -41,7 +41,7 @@ class School:
     def send_congrats_emails(self):
         passed_students = self.get_passed_students()
         for s in passed_students:
-            s.send_congrat_email()
+            s.send_congrats_emails()
             
     def send_top_students_to_employers(self):
         passed_students = self.get_passed_students()
